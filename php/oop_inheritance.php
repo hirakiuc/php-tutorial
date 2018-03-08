@@ -1,41 +1,8 @@
 <?php
-class Book {
-  var $price;
-  var $title;
+require_once("./oop_inheritance_book.php");
+require_once("./oop_inheritance_novel.php");
 
-  function __construct($title, $price) {
-    $this->title = $title;
-    $this->price = $price;
-  }
-
-  function setPrice($par) {
-    $this->price = $par;
-  }
-
-  function getPrice() {
-    return $this->price;
-  }
-
-  function setTitle($par) {
-    $this->title = $par;
-  }
-
-  function getTitle() {
-    return $this->title;
-  }
-}
-
-class Novel extends Book {
-  var $publisher;
-
-  function setPublisher($par) {
-    $this->publisher = $par;
-  }
-
-  function getPublisher() {
-    return $this->publisher;
-  }
-}
+use phptutorial\Novel as Novel;
 
 $novel = new Novel('My Novel', 100);
 $novel->setPublisher('myself');
@@ -43,4 +10,3 @@ $novel->setPublisher('myself');
 print($novel->getTitle());
 print($novel->getPrice());
 print($novel->getPublisher());
-?>

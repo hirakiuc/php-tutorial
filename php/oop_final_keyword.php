@@ -1,18 +1,12 @@
 <?php
-// This code should failed.
-class BaseClass {
-  public function test() {
-    echo "BaseClass::test() called\n";
-  }
+namespace phptutorial;
 
-  final public function moreTesting() {
-    echo "BaseClass::moreTesting() called\n";
-  }
-}
+use phptutorial\BaseClass as BaseClass;
 
-class ChildClass extends BaseClass {
-  public function moreTesting() {
-    echo "ChildClass::moreTesting() called\n";
-  }
+class ChildClass extends BaseClass
+{
+    public function moreTesting()
+    {
+        echo "ChildClass::moreTesting() called\n";
+    }
 }
-?>

@@ -1,6 +1,5 @@
 <?php
-  define("MINSIZE", 50);
+require("./constant_definition.php");
 
-  echo MINSIZE;
-  echo constant("MINSIZE");
-?>
+echo MINSIZE;
+echo constant("MINSIZE");

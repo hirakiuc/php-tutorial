@@ -1,11 +1,11 @@
 <html>
 <body>
-  <?php
+<?php
 /***--------------------------------***/
 $numbers = array(1,2,3,4,5);
 
-foreach($numbers as $value) {
-  echo "Value is $value <br />";
+foreach ($numbers as $value) {
+    echo "Value is $value <br />";
 }
 
 $numbers[0] = "one";
@@ -14,8 +14,8 @@ $numbers[2] = "three";
 $numbers[3] = "four";
 $numbers[4] = "five";
 
-foreach($numbers as $value) {
-  echo "Value is $value <br />";
+foreach ($numbers as $value) {
+    echo "Value is $value <br />";
 }
 /***--------------------------------***/
 echo "<br />";
@@ -38,21 +38,21 @@ echo "<br />";
 /***--------------------------------***/
 
 $marks = array(
-  "mohammad" => array (
-    "physics" => 35,
-    "maths" => 30,
-    "chemistry" => 39
-  ),
-  "qadir" => array(
-    "physics" => 30,
-    "maths" => 32,
-    "chemistry" => 29
-  ),
-  "zara" => array (
-    "physics" => 31,
-    "maths" => 22,
-    "chemistry" => 39
-  )
+    "mohammad" => array (
+        "physics" => 35,
+        "maths" => 30,
+        "chemistry" => 39
+    ),
+    "qadir" => array(
+        "physics" => 30,
+        "maths" => 32,
+        "chemistry" => 29
+    ),
+    "zara" => array (
+        "physics" => 31,
+        "maths" => 22,
+        "chemistry" => 39
+    )
 );
 
 echo "Marks for mohammad in physics : ";
@@ -63,7 +63,6 @@ echo $marks['qadir']['maths'] . "<br />";
 
 echo "Marks for zara in chemistry : ";
 echo $marks['zara']['chemistry'] . "<br />";
-
-  ?>
+?>
 </body>
 </html>

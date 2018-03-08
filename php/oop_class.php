@@ -1,29 +1,6 @@
 <?php
-class Book {
-  var $price;
-  var $title;
-
-  function __construct($title, $price) {
-    $this->title = $title;
-    $this->price = $price;
-  }
-
-  function setPrice($par) {
-    $this->price = $par;
-  }
-
-  function getPrice() {
-    return $this->price;
-  }
-
-  function setTitle($par) {
-    $this->title = $par;
-  }
-
-  function getTitle() {
-    return $this->title;
-  }
-}
+//require("./oop_class_definition.php");
+use phptutorial\Book as Book;
 
 $physics = new Book('Physics for High School', 10);
 //$physics->setTitle('Physics for High School');
@@ -42,4 +19,3 @@ $chemistry = new Book('Advanced Chemistry', 7);
 //$chemistry->setPrice(7);
 print($chemistry->getTitle());
 print($chemistry->getPrice());
-?>

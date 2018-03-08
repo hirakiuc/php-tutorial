@@ -1,13 +1,13 @@
 <?php
 if (isset($_POST['name']) || isset($_POST['age'])) {
-  if (preg_match("/[^A-Za-z'-]/", $_POST['name'])) {
-    die ("invalid name and name should be alpha");
-  }
+    if (preg_match("/[^A-Za-z'-]/", $_POST['name'])) {
+        die("invalid name and name should be alpha");
+    }
 
-  echo "Welcome " . $_POST['name'] . "<br />";
-  echo "You are " . $_POST['age'] . " years old.";
+    echo "Welcome " . $_POST['name'] . "<br />";
+    echo "You are " . $_POST['age'] . " years old.";
 
-  exit();
+    exit();
 }
 ?>
 <html>

@@ -3,14 +3,12 @@
   <title>Writing PHP Function which returns value</title>
 </head>
 <body>
-  <?php
-function addFunction($num1, $num2) {
-  $sum = $num1 + $num2;
-  return $sum;
-}
+<?php
+require("./function_with_return_value_definition.php");
+
 $ret = addFunction(10, 20);
 
 echo "Returned value from the function : $ret";
-  ?>
+?>
 </body>
 </html>
