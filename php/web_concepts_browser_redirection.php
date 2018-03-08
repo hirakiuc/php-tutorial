@@ -1,9 +1,9 @@
 <?php
 if (isset($_POST['location'])) {
-  $location = $_POST['location'];
-  header("Location:$location");
+    $location = $_POST['location'];
+    header("Location:$location");
 
-  exit();
+    exit();
 }
 ?>
 <html>

@@ -3,16 +3,14 @@
   <title>Dynamic Function Calls</title>
 </head>
 <body>
-  <?php
-function sayHello() {
-  echo "Hello<br />";
-}
+<?php
+require("./function_dynamic_call_definition.php");
 
 $func = "sayHello";
 $func();
 
 $func2 = "say" . "Hello";
 $func2();
-  ?>
+?>
 </body>
 </html>

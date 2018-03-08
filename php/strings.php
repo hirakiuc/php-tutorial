@@ -1,6 +1,6 @@
 <html>
 <body>
-  <?php
+<?php
 $variable = "name";
 $literally = 'My $variable will not print!\\n';
 
@@ -27,6 +27,6 @@ print("<br />");
 /****************************/
 
 echo strpos("Hello World!", "World");
-  ?>
+?>
 </body>
 </html>

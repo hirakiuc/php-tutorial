@@ -3,13 +3,11 @@
   <title>Writing PHP Function which returns value</title>
 </head>
 <body>
-  <?php
-function printMe($param = NULL) {
-  print $param;
-}
+<?php
+require("./function_with_default_param_definition.php");
 
 printMe("This is test");
 printMe();
-  ?>
+?>
 </body>
 </html>

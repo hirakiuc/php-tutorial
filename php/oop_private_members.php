@@ -1,26 +1,13 @@
 <?php
-class MyClass {
-  private $car = "skoda";
-  var $driver = "SRK";
+require_once "./oop_private_members_definition.php";
 
-  function __constructor($par) {
-  }
-
-  function myPublicFunc() {
-    return "I'm visible!";
-  }
-
-  private function myPrivateFunc() {
-    return "I'm not visible outside.";
-  }
-}
+use phptutorial\MyClass as MyClass;
 
 $m = new MyClass();
 $m->myPublicFunc();
 
 try {
-  $m->myPrivateFunc();
+    $m->myPrivateFunc();
 } catch (Error $e) {
-  echo 'Uncaught exception : ' . $e->getMessage() . "\n";
+    echo 'Uncaught exception : ' . $e->getMessage() . "\n";
 }
-?>

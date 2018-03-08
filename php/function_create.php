@@ -3,12 +3,10 @@
   <title>Writing PHP Function</title>
 </head>
 <body>
-  <?php
-function writeMessage() {
-  echo "You are really a nice person, Have a nice time!";
-}
+<?php
+require("./function_create_definition.php");
 
 writeMessage();
-  ?>
+?>
 </body>
 </html>

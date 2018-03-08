@@ -1,8 +1,8 @@
 <?php
 if (isset($_REQUEST['name']) || isset($_REQUEST['age'])) {
-  echo "Welcome " . $_REQUEST['name'] . "<br />";
-  echo "You are " . $_REQUEST['age'] . " years old.";
-  exit();
+    echo "Welcome " . $_REQUEST['name'] . "<br />";
+    echo "You are " . $_REQUEST['age'] . " years old.";
+    exit();
 }
 ?>
 <html>
