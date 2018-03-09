@@ -1,11 +1,9 @@
 <?php
-class MyClass1 {
-  public $obj1prop;
-}
+require_once "./filter_unserialize_class1.php";
+require_once "./filter_unserialize_class2.php";
 
-class MyClass2 {
-  public $obj2prop;
-}
+use php7tutorial\MyClass1 as MyClass1;
+use php7tutorial\MyClass2 as MyClass2;
 
 $obj1 = new MyClass1();
 $obj1->obj1prop = 1;
@@ -27,5 +25,3 @@ $data2 = unserialize($serializedObj2, ["allowed_classes" => ["MyClass1", "MyClas
 print($data1->obj1prop);
 print("<br/>");
 print($data2->obj2prop);
-
-?>

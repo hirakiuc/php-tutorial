@@ -13,5 +13,3 @@ print("<br/>");
 // Chaining ?? operation
 $username = $_GET['username'] ?? $_POST['username'] ?? 'not passed';
 print($username);
-
-?>

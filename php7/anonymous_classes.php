@@ -7,10 +7,10 @@ use php7tutorial\Application as Application;
 
 $app = new Application();
 $app->setLogger(new class implements Logger {
-  public function log(string $msg) {
-    print($msg);
-  }
+    public function log(string $msg)
+    {
+        print($msg);
+    }
 });
 
 $app->getLogger()->log("My first Log Message");
-?>

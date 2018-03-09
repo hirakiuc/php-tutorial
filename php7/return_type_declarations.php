@@ -1,14 +1,10 @@
 <?php
 declare(strict_types=1);
-function returnIntValue(int $value): int {
-  return $value;
-}
 
-function returnNextIntValue(int $value): int {
-  return $value + 1.0;
-}
+require_once "./return_type_declarations_definition.php";
+
+use function php7tutorial\returnIntValue as returnIntValue;
+use function php7tutorial\returnNextIntValue as returnNextIntValue;
 
 print(returnIntValue(5));
-
 print(returnNextIntValue(5));
-?>
