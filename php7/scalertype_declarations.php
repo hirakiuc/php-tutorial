@@ -1,9 +1,8 @@
 <?php
-// Coercive mode
 declare(strict_types=1);
 
-function sum(int ...$ints) {
-  return array_sum($ints);
-}
+require_once "./scalertype_declarations_definition.php";
+use function php7tutorial\sum as sum;
+
+// FIXME: This cause of TypeError.
 print(sum(2, '3', 4.1));
-?>

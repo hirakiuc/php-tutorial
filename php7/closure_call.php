@@ -1,11 +1,11 @@
 <?php
-class A {
-  private $x = 1;
-}
+require_once "./closure_call_definition.php";
+
+use php7tutorial\A as A;
 
 // Define a closure Pre PHP 7 code
-$getValue = function() {
-  return $this->x;
+$getValue = function () {
+    return $this->x;
 };
 
 /* Pre PHP 7
@@ -16,8 +16,7 @@ print($value());
 */
 
 // PHP 7+
-$value = function() {
-  return $this->x;
+$value = function () {
+    return $this->x;
 };
 print($value->call(new A));
-?>
